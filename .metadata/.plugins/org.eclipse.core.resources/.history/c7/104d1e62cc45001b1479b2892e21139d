@@ -1,0 +1,5 @@
+package com.rubanelearning.payment.service.impl;
+
+public interface PaymentService {
+
+}

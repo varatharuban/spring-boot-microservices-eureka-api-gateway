@@ -1,0 +1,6 @@
+package com.rubanelearning.order.payload;
+
+public class TransactionRequest {
+
+	
+}

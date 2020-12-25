@@ -1,0 +1,12 @@
+package com.rubanelearning.order.entity;
+
+public class Order extends BaseEntity {
+	
+	private static final long serialVersionUID = 1L;
+
+	private String name;
+	
+	private Integer qty;
+	
+	private Double amount;
+}

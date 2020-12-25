@@ -1,0 +1,28 @@
+package com.rubanelearning.payment.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "PAYMENTS")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@EqualsAndHashCode(callSuper = false)
+public class Payment extends BaseEntity {
+
+	private static final long serialVersionUID = -2355867558202854099L;
+
+	private String transactionId;
+
+	private String status;
+	
+	private int orderId;
+	
+	private Double amount;
+}

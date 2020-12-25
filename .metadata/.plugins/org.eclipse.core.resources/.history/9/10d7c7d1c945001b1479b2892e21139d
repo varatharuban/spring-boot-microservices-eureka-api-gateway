@@ -1,0 +1,10 @@
+package com.rubanelearning.order.entity;
+
+public class Order extends BaseEntity {
+
+	private String name;
+	
+	private Integer qty;
+	
+	private Double amount;
+}

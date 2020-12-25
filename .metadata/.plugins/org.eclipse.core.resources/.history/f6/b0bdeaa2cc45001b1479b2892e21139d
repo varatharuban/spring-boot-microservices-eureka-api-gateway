@@ -1,0 +1,5 @@
+package com.rubanelearning.payment.controller;
+
+public class PaymentController {
+
+}

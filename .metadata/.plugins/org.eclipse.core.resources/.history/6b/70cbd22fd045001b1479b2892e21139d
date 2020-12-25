@@ -1,0 +1,10 @@
+package com.rubanelearning.order.payload;
+
+import com.rubanelearning.order.entity.Order;
+
+public class TransactionRequest {
+
+	private Order order;
+	
+	private Payment payment;
+}

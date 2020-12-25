@@ -1,0 +1,38 @@
+package com.rubanelearning.order.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.rubanelearning.order.entity.Order;
+import com.rubanelearning.order.payload.Payment;
+import com.rubanelearning.order.payload.TransactionRequest;
+import com.rubanelearning.order.payload.TransactionResponse;
+import com.rubanelearning.order.service.OrderService;
+
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+
+	@Autowired
+	OrderService orderService;
+
+	@Autowired
+	RestTemplate restTemplate; 
+	
+	@PostMapping("/book-order")
+	public TransactionResponse bookOrder(@RequestBody TransactionRequest request) {
+		
+		Order order = request.getOrder();
+		Payment payment = request.getPayment();
+		payment.setAmount(amount);
+		payment.getOrderId();
+		
+		return orderService.saveOrder(order);
+		
+		// do a rest call to payment and pass the orderId.
+	}
+}

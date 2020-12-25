@@ -1,0 +1,5 @@
+package com.rubanelearning.order.entity;
+
+public class BaseEntity {
+
+}

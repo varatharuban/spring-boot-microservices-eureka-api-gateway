@@ -1,0 +1,21 @@
+package com.rubanelearning.payment.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.rubanelearning.payment.entity.Payment;
+import com.rubanelearning.payment.repository.PaymentRepository;
+import com.rubanelearning.payment.service.impl.PaymentService;
+
+@Service
+public class PaymentServiceImpl implements PaymentService {
+
+	@Autowired
+	PaymentRepository paymentRepository;
+	
+	@Override
+	public Payment doPayment(Payment payment) {
+		return paymentRepository.save(payment);
+	}
+
+}

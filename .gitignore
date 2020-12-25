@@ -1,0 +1,10 @@
+.mvn/
+mvnw.cmd
+.metadata
+HELP.md
+target/
+.mvn/wrapper/
+!.mvn/wrapper/maven-wrapper.jar
+
+.classpath
+.project

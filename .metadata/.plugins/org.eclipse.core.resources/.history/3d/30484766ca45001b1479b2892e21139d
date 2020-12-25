@@ -1,0 +1,5 @@
+package com.rubanelearning.order.repository;
+
+public interface OrderRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.rubanelearning.payment.entity;
+
+public class BaseEntity {
+
+}

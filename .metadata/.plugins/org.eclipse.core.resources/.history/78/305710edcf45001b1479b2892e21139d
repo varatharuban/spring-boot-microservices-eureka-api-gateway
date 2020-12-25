@@ -1,0 +1,22 @@
+package com.rubanelearning.order.payload;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+public class Payment {
+
+
+	private String transactionId;
+
+	private String status;
+	
+	private int orderId;
+	
+	private Double amount;
+}

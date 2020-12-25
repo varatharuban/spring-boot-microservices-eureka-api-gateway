@@ -1,0 +1,10 @@
+package com.rubanelearning.payment.service;
+
+import org.springframework.stereotype.Service;
+
+import com.rubanelearning.payment.service.impl.PaymentService;
+
+@Service
+public class PaymentServiceImpl implements PaymentService {
+
+}

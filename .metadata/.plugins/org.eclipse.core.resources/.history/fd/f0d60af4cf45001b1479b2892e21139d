@@ -1,0 +1,14 @@
+package com.rubanelearning.order.payload;
+
+public class Payment {
+
+	private Long id;
+	
+	private String transactionId;
+
+	private String status;
+	
+	private int orderId;
+	
+	private Double amount;
+}
