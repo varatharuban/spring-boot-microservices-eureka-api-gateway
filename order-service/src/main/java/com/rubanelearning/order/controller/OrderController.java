@@ -32,7 +32,7 @@ public class OrderController {
 		payment.setOrderId(order.getOrderId());
 
 		// do a rest call to payment and pass the orderId.
-		Payment paymentResponse = restTemplate.postForObject("http://localhost:8100/payments/make-payment", payment,
+		Payment paymentResponse = restTemplate.postForObject("http://PAYMENT-SERVICE/payments/make-payment", payment,
 				Payment.class);
 
 		String msg = "There are some issues while place the order in payment.";
