@@ -17,12 +17,17 @@ public class PaymentServiceImpl implements PaymentService {
 	PaymentRepository paymentRepository;
 	
 	@Override
-	public Payment doPayment(Payment payment) {
+	public Payment doPayment(Payment payment) { 
 		payment.setTransactionId(UUID.randomUUID().toString());
 		payment.setStatus(new Random().nextBoolean() ? "success" : "failed");
 		payment.setStatus("success");
 		
 		return paymentRepository.save(payment);
+	}
+
+	@Override
+	public Payment findPaymentHistoryByOrderId(String orderId) {
+		return paymentRepository.findByOrderId(orderId);
 	}
 
 }

@@ -26,7 +26,7 @@ public class Payment extends BaseEntity {
 	private String status;
 	
 	@Column(name = "ORDER_ID")
-	private int orderId;
+	private String orderId;
 	
 	@Column(name = "AMOUNT")
 	private Double amount;
